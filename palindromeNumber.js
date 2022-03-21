@@ -8,6 +8,7 @@ const isPalindrome = (x) => {
     reverse = reverse * 10 + (num % 10);
     num = parseInt(num / 10);
   }
+
   return reverse === x;
 };
 
