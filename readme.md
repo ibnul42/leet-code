@@ -61,3 +61,13 @@
 ###### For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C's strstr() and Java's indexOf().
 
 # 1342. Number of Steps to Reduce a Number to Zero
+
+###### Given an integer num, return the number of steps to reduce it to zero.
+
+###### In one step, if the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it.
+
+# 66. Plus One
+
+###### You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
+
+###### Increment the large integer by one and return the resulting array of digits.
