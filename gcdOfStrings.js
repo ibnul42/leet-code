@@ -21,4 +21,4 @@ var gcdOfStrings = function (str1, str2) {
 
 console.log(gcdOfStrings("ABCABC", "")) // Output: "ABC"
 console.log(gcdOfStrings("ABABAB", "ABAB")) // Output: "AB"
-console.log(gcdOfStrings("LEET", "CODE"))
+console.log(gcdOfStrings("LEET", "CODE")) // Output: ""
