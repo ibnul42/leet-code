@@ -238,3 +238,6 @@
 ###### fib accepts a single integer n and returns 1 if n <= 1 or fib(n - 1) + fib(n - 2) otherwise.
 ###### factorial accepts a single integer n and returns 1 if n <= 1 or factorial(n - 1) * n otherwise.
  
+# 2723. Add Two Promises
+
+###### Given two promises promise1 and promise2, return a new promise. promise1 and promise2 will both resolve with a number. The returned promise should resolve with the sum of the two numbers.
