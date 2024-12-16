@@ -256,3 +256,12 @@
 ###### Initially, the execution of the function fn should be delayed by t milliseconds.
 
 ###### If, before the delay of t milliseconds, the function cancelFn is invoked, it should cancel the delayed execution of fn. Otherwise, if cancelFn is not invoked within the specified delay t, fn should be executed with the provided args as arguments.
+
+# 2725. Interval Cancellation
+
+###### Given a function fn, an array of arguments args, and an interval time t, return a cancel function cancelFn.
+
+###### After a delay of cancelTimeMs, the returned cancel function cancelFn will be invoked.
+
+###### setTimeout(cancelFn, cancelTimeMs)
+###### The function fn should be called with args immediately and then called again every t milliseconds until cancelFn is called at cancelTimeMs ms.
