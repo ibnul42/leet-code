@@ -310,3 +310,11 @@
 
 ###### When any of the promises returned from functions were rejected. promise should also reject with the reason of the first rejection.
 ###### Please solve it without using the built-in Promise.all function.
+
+# 2727. Is Object Empty
+
+###### Given an object or an array, return if it is empty.
+
+###### An empty object contains no key-value pairs.
+###### An empty array contains no elements.
+###### You may assume the object or array is the output of JSON.parse.
