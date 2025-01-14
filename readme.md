@@ -375,3 +375,10 @@
 ###### A flattened array is a version of that array with some or all of the sub-arrays removed and replaced with the actual elements in that sub-array. This flattening operation should only be done if the current depth of nesting is less than n. The depth of the elements in the first array are considered to be 0.
 
 ###### Please solve it without the built-in Array.flat method.
+
+# 2695. Array Wrapper
+
+###### Create a class ArrayWrapper that accepts an array of integers in its constructor. This class should have two features:
+
+###### When two instances of this class are added together with the + operator, the resulting value is the sum of all the elements in both arrays.
+###### When the String() function is called on the instance, it will return a comma separated string surrounded by brackets. For example, [1,2,3].
