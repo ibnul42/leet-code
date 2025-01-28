@@ -382,3 +382,7 @@
 
 ###### When two instances of this class are added together with the + operator, the resulting value is the sum of all the elements in both arrays.
 ###### When the String() function is called on the instance, it will return a comma separated string surrounded by brackets. For example, [1,2,3].
+
+# 2726. Calculator with Method Chaining
+
+###### Design a Calculator class. The class should provide the mathematical operations of addition, subtraction, multiplication, division, and exponentiation. It should also allow consecutive operations to be performed using method chaining. The Calculator class constructor should accept a number which serves as the initial value of result.
