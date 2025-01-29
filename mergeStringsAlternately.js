@@ -14,3 +14,23 @@ var mergeAlternately = function (word1, word2) {
 }
 
 console.log(mergeAlternately("word1", "word22"))
+
+// Solution 2: more efficient
+/**
+ * @param {string} word1
+ * @param {string} word2
+ * @return {string}
+ */
+var mergeAlternately = function (word1, word2) {
+  let res = ''
+  for (let i = 0; i < word1.length; i++) {
+      res += word1[i] + (word2[i] || '')
+  }
+
+  if (word1.length < word2.length) res += word2.slice(word1.length)
+
+  return res
+};
+
+// Example usage
+console.log(mergeAlternately('abcd', 'pq'))
