@@ -21,5 +21,31 @@ var reverseVowels = function (s) {
   return result
 }
 
-console.log(reverseVowels("hello"))
-console.log(reverseVowels("leetcode"))
+// Example usage
+// console.log(reverseVowels("hello")) //holle
+// console.log(reverseVowels("leetcode")) //leotcede
+
+
+// Solution 2 (optimized)
+var reverseVowels2 = function (s) {
+  const options = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
+  let left = 0, right = s.length - 1
+  const arr = s.split('')
+  while (left < right) {
+    while (left < right && !options.has(arr[left])) {
+      left++
+    }
+    while (left < right && !options.has(arr[right])) {
+      right--
+    }
+    [arr[left], arr[right]] = [arr[right], arr[left]]
+    left++
+    right--
+  }
+
+  return arr.join('')
+}
+
+// Example usage
+console.log(reverseVowels2("hello")) //holle
+console.log(reverseVowels2("leetcode")) //leotcede
