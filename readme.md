@@ -386,3 +386,9 @@
 # 2726. Calculator with Method Chaining
 
 ###### Design a Calculator class. The class should provide the mathematical operations of addition, subtraction, multiplication, division, and exponentiation. It should also allow consecutive operations to be performed using method chaining. The Calculator class constructor should accept a number which serves as the initial value of result.
+
+# 283. Move Zeroes
+
+###### Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+###### Note that you must do this in-place without making a copy of the array.
