@@ -392,3 +392,9 @@
 ###### Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
 ###### Note that you must do this in-place without making a copy of the array.
+
+# 643. Maximum Average Subarray I
+
+###### You are given an integer array nums consisting of n elements, and an integer k.
+
+###### Find a contiguous subarray whose length is equal to k that has the maximum average value and return this value. Any answer with a calculation error less than 10-5 will be accepted.
