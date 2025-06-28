@@ -15,3 +15,12 @@ var reverseWords = function(s) {
 console.log(reverseWords("  hello world  "))
 console.log(reverseWords("the sky is blue"))
 console.log(reverseWords("a good   example"))
+
+// Solution 02
+var reverseWords2 = function(s) {
+    return s.trim().split(' ').reverse()
+};
+
+// example usage
+const input = " the sky is blue "
+console.log(reverseWords2(input))
