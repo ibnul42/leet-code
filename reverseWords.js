@@ -17,8 +17,8 @@ console.log(reverseWords("the sky is blue"))
 console.log(reverseWords("a good   example"))
 
 // Solution 02
-var reverseWords2 = function(s) {
-    return s.trim().split(' ').reverse()
+var reverseWords = function(s) {
+    return s.trim().split(' ').filter(c => c.length > 0).reverse().join(' ')
 };
 
 // example usage
