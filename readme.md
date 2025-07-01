@@ -420,3 +420,9 @@
 ###### answer[0] is a list of all distinct integers in nums1 which are not present in nums2.
 ###### answer[1] is a list of all distinct integers in nums2 which are not present in nums1.
 ###### Note that the integers in the lists may be returned in any order.
+
+# 152. Maximum Product Subarray
+
+###### Given an integer array nums, find a subarray that has the largest product, and return the product.
+
+###### The test cases are generated so that the answer will fit in a 32-bit integer.
