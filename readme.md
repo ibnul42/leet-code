@@ -426,3 +426,6 @@
 ###### Given an integer array nums, find a subarray that has the largest product, and return the product.
 
 ###### The test cases are generated so that the answer will fit in a 32-bit integer.
+
+# 628. Maximum Product of Three Numbers
+###### Given an integer array nums, find three numbers whose product is maximum and return the maximum product.
