@@ -169,6 +169,7 @@
 ###### Write a function expect that helps developers test their code. It should take in any value val and return an object with the following two functions.
 
 ###### toBe(val) accepts another value and returns true if the two values === each other. If they are not equal, it should throw an error "Not Equal".
+
 ###### notToBe(val) accepts another value and returns true if the two values !== each other. If they are equal, it should throw an error "Equal".
 
 # 2635. Apply Transform Over Each Element in Array
@@ -186,7 +187,9 @@
 ###### The fn function takes one or two arguments:
 
 ###### arr[i] - number from the arr
+
 ###### i - index of arr[i]
+
 ###### filteredArr should only contain the elements from the arr for which the expression fn(arr[i], i) evaluates to a ###### truthy value. A truthy value is a value where Boolean(value) returns true.
 
 ###### Please solve it without the built-in Array.filter method.
@@ -217,13 +220,14 @@
 
 # 2703. Return Length of Arguments Passed
 
-######  Write a function argumentsLength that returns the count of arguments passed to it.
+###### Write a function argumentsLength that returns the count of arguments passed to it.
 
 # 2666. Allow One Function Call
 
 ###### Given a function fn, return a new function that is identical to the original function except that it ensures fn is called at most once.
 
 ###### The first time the returned function is called, it should return the same result as fn.
+
 ###### Every subsequent time it is called, it should return undefined.
 
 # 2623. Memoize
@@ -235,9 +239,11 @@
 ###### You can assume there are 3 possible input functions: sum, fib, and factorial.
 
 ###### sum accepts two integers a and b and returns a + b. Assume that if a value has already been cached for the arguments (b, a) where a != b, it cannot be used for the arguments (a, b). For example, if the arguments are (3, 2) and (2, 3), two separate calls should be made.
+
 ###### fib accepts a single integer n and returns 1 if n <= 1 or fib(n - 1) + fib(n - 2) otherwise.
-###### factorial accepts a single integer n and returns 1 if n <= 1 or factorial(n - 1) * n otherwise.
- 
+
+###### factorial accepts a single integer n and returns 1 if n <= 1 or factorial(n - 1) \* n otherwise.
+
 # 2723. Add Two Promises
 
 ###### Given two promises promise1 and promise2, return a new promise. promise1 and promise2 will both resolve with a number. The returned promise should resolve with the sum of the two numbers.
@@ -253,6 +259,7 @@
 ###### After a delay of cancelTimeMs, the returned cancel function cancelFn will be invoked.
 
 ###### setTimeout(cancelFn, cancelTimeMs)
+
 ###### Initially, the execution of the function fn should be delayed by t milliseconds.
 
 ###### If, before the delay of t milliseconds, the function cancelFn is invoked, it should cancel the delayed execution of fn. Otherwise, if cancelFn is not invoked within the specified delay t, fn should be executed with the provided args as arguments.
@@ -264,6 +271,7 @@
 ###### After a delay of cancelTimeMs, the returned cancel function cancelFn will be invoked.
 
 ###### setTimeout(cancelFn, cancelTimeMs)
+
 ###### The function fn should be called with args immediately and then called again every t milliseconds until cancelFn is called at cancelTimeMs ms.
 
 # 2637. Promise Time Limit
@@ -273,6 +281,7 @@
 ###### The time limited function should follow these rules:
 
 ###### If the fn completes within the time limit of t milliseconds, the time limited function should resolve with the result.
+
 ###### If the execution of the fn exceeds the time limit, the time limited function should reject with the string "Time Limit Exceeded".
 
 # 2622. Cache With Time Limit
@@ -306,9 +315,11 @@
 ###### promise resolves:
 
 ###### When all the promises returned from functions were resolved successfully in parallel. The resolved value of promise should be an array of all the resolved values of promises in the same order as they were in the functions. The promise should resolve when all the asynchronous functions in the array have completed execution in parallel.
+
 ###### promise rejects:
 
 ###### When any of the promises returned from functions were rejected. promise should also reject with the reason of the first rejection.
+
 ###### Please solve it without using the built-in Promise.all function.
 
 # 2727. Is Object Empty
@@ -316,7 +327,9 @@
 ###### Given an object or an array, return if it is empty.
 
 ###### An empty object contains no key-value pairs.
+
 ###### An empty array contains no elements.
+
 ###### You may assume the object or array is the output of JSON.parse.
 
 # 2677. Chunk Array
@@ -327,7 +340,7 @@
 
 ###### You may assume the array is the output of JSON.parse. In other words, it is valid JSON.
 
-###### Please solve it without using lodash's _.chunk function.
+###### Please solve it without using lodash's \_.chunk function.
 
 # 2619. Array Prototype Last
 
@@ -345,7 +358,7 @@
 
 ###### The order of each value list should be the order the items appear in the array. Any order of keys is acceptable.
 
-###### Please solve it without lodash's _.groupBy function.
+###### Please solve it without lodash's \_.groupBy function.
 
 # 2724. Sort By
 
@@ -355,7 +368,7 @@
 
 # 2722. Join Two Arrays by ID
 
-###### Given two arrays arr1 and arr2, return a new array joinedArray. All the objects in each of the two inputs arrays will contain an id field that has an integer value. 
+###### Given two arrays arr1 and arr2, return a new array joinedArray. All the objects in each of the two inputs arrays will contain an id field that has an integer value.
 
 ###### joinedArray is an array formed by merging arr1 and arr2 based on their id key. The length of joinedArray should be the length of unique values of id. The returned array should be sorted in ascending order based on the id key.
 
@@ -364,6 +377,7 @@
 ###### If two objects share an id, their properties should be merged into a single object:
 
 ###### If a key only exists in one object, that single key-value pair should be included in the object.
+
 ###### If a key is included in both objects, the value in the object from arr2 should override the value from arr1.
 
 # 2625. Flatten Deeply Nested Array
@@ -381,6 +395,7 @@
 ###### Create a class ArrayWrapper that accepts an array of integers in its constructor. This class should have two features:
 
 ###### When two instances of this class are added together with the + operator, the resulting value is the sum of all the elements in both arrays.
+
 ###### When the String() function is called on the instance, it will return a comma separated string surrounded by brackets. For example, [1,2,3].
 
 # 2726. Calculator with Method Chaining
@@ -390,35 +405,47 @@
 # 283. Move Zeroes
 
 ###### Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
 ###### Note that you must do this in-place without making a copy of the array.
 
 # 643. Maximum Average Subarray I
 
 ###### You are given an integer array nums consisting of n elements, and an integer k.
+
 ###### Find a contiguous subarray whose length is equal to k that has the maximum average value and return this value. Any answer with a calculation error less than 10-5 will be accepted.
 
 # 443. String Compression
 
 ###### Given an array of characters chars, compress it using the following algorithm:
+
 ###### Begin with an empty string s. For each group of consecutive repeating characters in chars:
+
 ###### If the group's length is 1, append the character to s.
+
 ###### Otherwise, append the character followed by the group's length.
+
 ###### The compressed string s should not be returned separately, but instead, be stored in the input character array chars. Note that group lengths that are 10 or longer will be split into multiple characters in chars.
 
 ###### After you are done modifying the input array, return the new length of the array.
+
 ###### You must write an algorithm that uses only constant extra space.
 
 # 1679. Max Number of K-Sum Pairs
 
 ###### You are given an integer array nums and an integer k.
+
 ###### In one operation, you can pick two numbers from the array whose sum equals k and remove them from the array.
+
 ###### Return the maximum number of operations you can perform on the array.
 
 # 2215. Find the Difference of Two Arrays
 
 ###### Given two 0-indexed integer arrays nums1 and nums2, return a list answer of size 2 where:
+
 ###### answer[0] is a list of all distinct integers in nums1 which are not present in nums2.
+
 ###### answer[1] is a list of all distinct integers in nums2 which are not present in nums1.
+
 ###### Note that the integers in the lists may be returned in any order.
 
 # 152. Maximum Product Subarray
@@ -428,4 +455,21 @@
 ###### The test cases are generated so that the answer will fit in a 32-bit integer.
 
 # 628. Maximum Product of Three Numbers
+
 ###### Given an integer array nums, find three numbers whose product is maximum and return the maximum product.
+
+# 2390. Removing Stars From a String
+
+###### You are given a string s, which contains stars \*.
+
+###### In one operation, you can:
+
+- Choose a star in s.
+- Remove the closest non-star character to its left, as well as remove the star itself.
+
+###### Return the string after all stars have been removed.
+
+###### Note:
+
+- The input will be generated such that the operation is always possible.
+- It can be shown that the resulting string will always be unique.
