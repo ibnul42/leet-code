@@ -551,3 +551,13 @@
 ###### Each letter in pattern maps to exactly one unique word in s.
 ###### Each unique word in s maps to exactly one letter in pattern.
 ###### No two letters map to the same word, and no two words map to the same letter.
+
+# 20. Valid Parentheses
+
+###### Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+###### An input string is valid if:
+
+###### Open brackets must be closed by the same type of brackets.
+###### Open brackets must be closed in the correct order.
+###### Every close bracket has a corresponding open bracket of the same type.
