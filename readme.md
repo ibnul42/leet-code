@@ -576,3 +576,7 @@
 ###### There will not be any division by zero.
 ###### The input represents a valid arithmetic expression in a reverse polish notation.
 ###### The answer and all the intermediate calculations can be represented in a 32-bit integer.
+
+# 242. Valid Anagram
+
+###### Given two strings s and t, return true if t is an anagram of s, and false otherwise.
