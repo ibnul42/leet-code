@@ -580,3 +580,7 @@
 # 242. Valid Anagram
 
 ###### Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+# 219. Contains Duplicate II
+
+###### Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k.
