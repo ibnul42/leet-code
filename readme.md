@@ -619,3 +619,9 @@
 ###### The path must not end with a slash '/', unless it is the root directory.
 ###### The path must not have any single or double periods ('.' and '..') used to denote current or parent directories.
 ###### Return the simplified canonical path.
+
+# 14. Longest Common Prefix
+
+###### Write a function to find the longest common prefix string amongst an array of strings.
+
+###### If there is no common prefix, return an empty string "".
